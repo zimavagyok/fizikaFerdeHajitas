@@ -5,21 +5,35 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:ferdeHajitas"
         mc:Ignorable="d"
-        Title="Ferde hajítás" Height="450" Width="945" ResizeMode="NoResize" Loaded="Window_Loaded">
+        Title="Ferde hajítás" Height="450" Width="1025" ResizeMode="NoResize" Loaded="Window_Loaded">
     <Grid Margin="0,0,0,-6">
         <Label Content="Test tömege:" HorizontalAlignment="Left" Margin="10,14,0,0" VerticalAlignment="Top" FontSize="16"/>
         <Label Content="Test kezdősebessége:" HorizontalAlignment="Left" Margin="10,50,0,0" VerticalAlignment="Top" FontSize="16"/>
         <Label Content="Hajítás szöge (fok):" HorizontalAlignment="Left" Margin="10,86,0,0" VerticalAlignment="Top" FontSize="16"/>
         <Label Content="Közegellenállási tényező:" HorizontalAlignment="Left" Margin="10,118,0,0" VerticalAlignment="Top" FontSize="16"/>
-        <Button x:Name="playButton" Content="Indítás" HorizontalAlignment="Left" Margin="10,163,0,0" VerticalAlignment="Top" Height="39" Width="60" FontSize="14" Click="playButton_Click"/>
-        <Button x:Name="defaultValue" Content="Alaphelyzet" HorizontalAlignment="Left" Margin="102,163,0,0" VerticalAlignment="Top" Height="39" Width="93" FontSize="14" Click="defaultValue_Click"/>
+        <Button x:Name="playButton" Content="Indítás" HorizontalAlignment="Left" Margin="10,0,0,0" VerticalAlignment="Center" Height="39" Width="60" FontSize="14" Click="playButton_Click"/>
+        <Button x:Name="defaultValue" Content="Alaphelyzet" HorizontalAlignment="Left" Margin="102,0,0,0" VerticalAlignment="Center" Height="39" Width="93" FontSize="14" Click="defaultValue_Click"/>
         <TextBox x:Name="massTB" HorizontalAlignment="Left" Margin="214,17,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="113" Height="24" TextChanged="massTB_TextChanged"/>
-        <Slider x:Name="alfaSlider" HorizontalAlignment="Left" Margin="197,95,0,0" VerticalAlignment="Top" Width="147" Minimum="1" Value="1" Maximum="90" TickPlacement="None" ValueChanged="SliderGetValue"/>
+        <Slider x:Name="alfaSlider" HorizontalAlignment="Left" Margin="214,96,0,0" VerticalAlignment="Top" Width="147" Minimum="1" Value="1" Maximum="90" TickPlacement="None" ValueChanged="SliderGetValue"/>
         <TextBox x:Name="velocityTB" HorizontalAlignment="Left" Margin="214,53,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="113" Height="24" TextChanged="velocityTB_TextChanged"/>
         <TextBox x:Name="bTB" HorizontalAlignment="Left" Margin="214,125,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="113" Height="24" TextChanged="bTB_TextChanged"/>
         <Label Content="" HorizontalAlignment="Left" Margin="169,92,0,0" VerticalAlignment="Top"/>
-        <Label x:Name="fok" Content="1" HorizontalAlignment="Left" Margin="158,92,0,0" VerticalAlignment="Top" Width="28"/>
-        <Grid x:Name="canvasControl" Margin="349,17,10,19"/>
+        <Label x:Name="fok" Content="1" HorizontalAlignment="Left" Margin="158,92,0,0" VerticalAlignment="Top" Width="51"/>
+        <Grid x:Name="canvasControl" Margin="404,17,10,19"/>
+        <Label Content="KG" HorizontalAlignment="Left" Margin="341,18,0,0" VerticalAlignment="Top"/>
+        <Label Content="M/S" HorizontalAlignment="Left" Margin="341,52,0,0" VerticalAlignment="Top"/>
+        <Label Content="Nehézségi gyorsulás:" HorizontalAlignment="Left" Margin="10,154,0,0" VerticalAlignment="Top" FontSize="16"/>
+        <TextBox x:Name="gTB" HorizontalAlignment="Left" Margin="214,161,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="113" Height="24" TextChanged="gTB_TextChanged"/>
+        <Label Content="M/S^2" HorizontalAlignment="Left" Margin="341,158,0,0" VerticalAlignment="Top"/>
+        <Label Content="Hajítás távolsága:" HorizontalAlignment="Left" Margin="11,264,0,0" VerticalAlignment="Top" FontSize="16"/>
+        <Label x:Name="tav" Content="" HorizontalAlignment="Left" Margin="155,268,0,0" VerticalAlignment="Top" Width="141"/>
+        <Label Content="M" HorizontalAlignment="Left" Margin="310,268,0,0" VerticalAlignment="Top"/>
+        <Label Content="Hajítás időtartama:" HorizontalAlignment="Left" Margin="11,295,0,0" VerticalAlignment="Top" FontSize="16"/>
+        <Label x:Name="hajT" Content="" HorizontalAlignment="Left" Margin="155,300,0,0" VerticalAlignment="Top" Width="141"/>
+        <Label Content="S" HorizontalAlignment="Left" Margin="310,300,0,0" VerticalAlignment="Top"/>
+        <Label Content="Hajítás max magassága:" HorizontalAlignment="Left" Margin="10,331,0,0" VerticalAlignment="Top" FontSize="16"/>
+        <Label x:Name="hajMax" Content="" HorizontalAlignment="Left" Margin="200,336,0,0" VerticalAlignment="Top" Width="141"/>
+        <Label Content="M" HorizontalAlignment="Left" Margin="347,335,0,0" VerticalAlignment="Top"/>
 
     </Grid>
 </Window>
